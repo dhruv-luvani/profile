@@ -5,6 +5,8 @@
   "homepage": "https://dhruv-luvani.github.io/profile",
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.0",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
