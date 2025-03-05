@@ -1,0 +1,1 @@
+export const localStorageKey = "dhruvDemo_user_data"
