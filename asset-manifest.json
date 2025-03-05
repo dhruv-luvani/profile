@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.70064671.css",
-    "main.js": "/profile/static/js/main.35089db0.js",
+    "main.css": "/profile/static/css/main.153da282.css",
+    "main.js": "/profile/static/js/main.c802fb69.js",
+    "static/media/NodeJS.svg": "/profile/static/media/NodeJS.1d9e1cdab85b019fdcf8f51cbeb47517.svg",
+    "static/media/React.svg": "/profile/static/media/React.b8a55c8baa9eeb66614c45622cf62c98.svg",
+    "static/media/Next.svg": "/profile/static/media/Next.4be1d58928aafb30356a6027831dc538.svg",
+    "static/media/AWS.svg": "/profile/static/media/AWS.789df0c37fd8e47bbf78576961d9083c.svg",
+    "static/media/gitlab.svg": "/profile/static/media/gitlab.e4dd1b3b0d289b3b3f8a1e236690a424.svg",
+    "static/media/Firebase.svg": "/profile/static/media/Firebase.6a9dd980c9d40a095f5cd77fd587fe8e.svg",
     "index.html": "/profile/index.html",
-    "main.70064671.css.map": "/profile/static/css/main.70064671.css.map",
-    "main.35089db0.js.map": "/profile/static/js/main.35089db0.js.map"
+    "main.153da282.css.map": "/profile/static/css/main.153da282.css.map",
+    "main.c802fb69.js.map": "/profile/static/js/main.c802fb69.js.map"
   },
   "entrypoints": [
-    "static/css/main.70064671.css",
-    "static/js/main.35089db0.js"
+    "static/css/main.153da282.css",
+    "static/js/main.c802fb69.js"
   ]
 }
