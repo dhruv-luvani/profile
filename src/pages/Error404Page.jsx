@@ -27,7 +27,7 @@ export default function Error404Page ({ statusCode = 404, message = "Page Not Fo
         {/* Back to Home Button */}
         <div className="mt-10">
           <Link
-            to="/"
+            to="/profile"
             className="group inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200"
           >
             <BsArrowLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform duration-200" />
