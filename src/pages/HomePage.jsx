@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../components/layout/Header'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css';
@@ -19,37 +18,41 @@ import tailwindCssPng from '../assets/images/tailwind-css.png'
 import htmlSvg from '../assets/svg/html.svg'
 import { ReactTyped } from "react-typed";
 import bgProfileImg from '../assets/images/profile_42.png'
+import ClickSpark from '../components/widgets/ClickSpark';
+import SpotlightCard from '../components/widgets/SpotlightCard';
 
 export default function HomePage() {
   return (<div className='min-h-screen bg-gray-800 text-white'>
-    <Header />
+    {/* <Header /> */}
 
     <div className=" bg-gradient-to-r from-blue-500 to-purple-800 text-white">
-      <div
-       className="container h-[500px] flex flex-col justify-center bg-right-bottom bg-no-repeat"
-       style={{
-        backgroundImage: `url(${bgProfileImg})`,
-        backgroundSize:"auto 85%"
-        }}>
-        <h1 className="text-5xl font-bold">Hello, I'm Dhruv Luvani</h1>
-        <ReactTyped
-          strings={[
-            "React Js Developer",
-            "Next Js Developer",
-          ]}
-          typeSpeed={75}
-          backSpeed={30}
-          backDelay={1000}
-          attr="placeholder"
-          loop
-        >
-          <input className='text-2xl italic bg-transparent outline-none placeholder:text-white text-slate-300 mt-2 cursor-default' type="text" disabled />
-        </ReactTyped>
-      </div>
+      <ClickSpark>
+        <div
+          className="container h-[500px] flex flex-col justify-center bg-right-bottom bg-no-repeat"
+          style={{
+            backgroundImage: `url(${bgProfileImg})`,
+            backgroundSize: "auto 85%"
+          }}>
+          <h1 className="text-5xl font-bold">Hello, I'm Dhruv Luvani</h1>
+          <ReactTyped
+            strings={[
+              "React Js Developer",
+              "Next Js Developer",
+            ]}
+            typeSpeed={75}
+            backSpeed={30}
+            backDelay={1000}
+            attr="placeholder"
+            loop
+          >
+            <input className='text-2xl italic bg-transparent outline-none placeholder:text-white text-slate-300 mt-2 cursor-default' type="text" disabled />
+          </ReactTyped>
+        </div>
+      </ClickSpark>
     </div>
 
-    <div id='skillsSection' className="container bg-gray-800 p-6">
-      <h2 className="border-b border-primary pb-2 mb-4">My Skills</h2>
+    <div id='skillsSection' className="container bg-gray-800 p-6 mt-7">
+      <h2 className="border-b border-gray-400 pb-2 mb-4">My Skills</h2>
       <Splide
         aria-label="My Favorite Images"
         options={{
@@ -126,65 +129,74 @@ export default function HomePage() {
       </Splide>
     </div>
 
-    <div id='experienceSection' className="container bg-gray-800 p-6 mt-10 rounded-lg shadow-lg">
-      <h2 className="border-b border-primary pb-2 mb-4">Work Experience</h2>
-      <div className="space-y-4">
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">ReactJs | NextJs Developer at Semicolon Solution</h3>
-          <p className="text-gray-400 text-sm mt-2">Aug 2022 - Present</p>
-        </div>
-      </div>
-    </div>
-
-    <div id='projectSection' className="container bg-gray-800 p-6 mt-10 rounded-lg shadow-lg">
-      <h2 className="border-b border-primary pb-2 mb-4">Projects</h2>
-      <div className="space-y-4">
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">Explain Life</h3>
-          <p className="text-gray-200 text-lg">(skills: ReactJs, tailwind css, redux-toolkit)</p>
-          <p className="text-gray-300 mt-2">Life insurance policy recommendation agent website with coverage calculation with NodeJS
-            backend (Admin panel & User panel)</p>
-        </div>
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">Fitness Administration Portal</h3>
-          <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic template)</p>
-          <p className="text-gray-300 mt-2">Provide a fitness plan that includes workout videos, personalized calorie tracking, and
-            dietary recommendations.</p>
-        </div>
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">Skyline Technology Administration Portal</h3>
-          <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic-template)</p>
-          <p className="text-gray-300 mt-2">Create an integrated administration portal for efficient client, engineer, and Sarine machine
-            Management, facilitating seamless coordination of diamond repair services and timely
-            resolution of upcoming complaints.</p>
-        </div>
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">Read-it-out</h3>
-          <p className="text-gray-200 text-lg">(skills: ReactJs, tailwind css, redux-toolkit)</p>
-          <p className="text-gray-300 mt-2">A government library website offering a wide range of books in various formats, ensuring accessibility and availability to users.</p>
-        </div>
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">3SquaresApp</h3>
-          <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap)</p>
-          <p className="text-gray-300 mt-2">Food delivery website by connecting users with a diverse selection of professional restaurants and providing seamless delivery services. (with User Site, Admin Panel, Corporate Panel and Provider Panel)</p>
-        </div>
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">Special Days Administration Portal</h3>
-          <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic-template)</p>
-          <p className="text-gray-300 mt-2">Website dedicated to commemorating special occasions, offering advanced reminder functionalities and personalized party invitations to ensure memorable and organized celebrations.</p>
-        </div>
-        <div className="bg-gray-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold">Unicorn-Ui</h3>
-          <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic-template)</p>
-          <p className="text-gray-300 mt-2">Collection of premium UI design templates encompassing diverse topics, providing a paid facility for professionals seeking high-quality. (User panel & Admin Panel)</p>
-        </div>
-      </div>
-    </div>
-
-    <div id='contactSection' className="container bg-gray-800 p-6 mt-10 rounded-lg shadow-lg text-center">
-      <h2 className="border-b border-primary pb-2 mb-4">Contact Me</h2>
-      <p>Email: <a href="mailto:dvluvani@gmail.com" target='_blank' className="text-blue-400">dvluvani@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/dhruv-luvani/" target='_blank' className="text-blue-400">linkedin.com/in/dhruv-luvani</a></p>
+    <div id='projectSection' className="container bg-gray-800 p-6 mt-10">
+      <h2 className="border-b border-gray-400 pb-2 mb-4">Projects</h2>
+      <Splide
+        aria-label="My Favorite Images"
+        options={{
+          type: 'slide',
+          perPage: 3,
+          perMove:1,
+          snap: true,
+          pagination: false,
+          arrows: true,
+          gap: "20px",
+        }}
+      >
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">Explain Life</h3>
+            <p className="text-gray-200 text-lg">(skills: ReactJs, tailwind css, redux-toolkit)</p>
+            <p className="text-gray-300 mt-2">Life insurance policy recommendation agent website with coverage calculation with NodeJS
+              backend (Admin panel & User panel)</p>
+          </SpotlightCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">Fitness Administration Portal</h3>
+            <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic template)</p>
+            <p className="text-gray-300 mt-2">Provide a fitness plan that includes workout videos, personalized calorie tracking, and
+              dietary recommendations.</p>
+          </SpotlightCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">Skyline Technology Administration Portal</h3>
+            <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic-template)</p>
+            <p className="text-gray-300 mt-2">Create an integrated administration portal for efficient client, engineer, and Sarine machine
+              Management, facilitating seamless coordination of diamond repair services and timely
+              resolution of upcoming complaints.</p>
+          </SpotlightCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">Read-it-out</h3>
+            <p className="text-gray-200 text-lg">(skills: ReactJs, tailwind css, redux-toolkit)</p>
+            <p className="text-gray-300 mt-2">A government library website offering a wide range of books in various formats, ensuring accessibility and availability to users.</p>
+          </SpotlightCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">3SquaresApp</h3>
+            <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap)</p>
+            <p className="text-gray-300 mt-2">Food delivery website by connecting users with a diverse selection of professional restaurants and providing seamless delivery services. (with User Site, Admin Panel, Corporate Panel and Provider Panel)</p>
+          </SpotlightCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">Special Days Administration Portal</h3>
+            <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic-template)</p>
+            <p className="text-gray-300 mt-2">Website dedicated to commemorating special occasions, offering advanced reminder functionalities and personalized party invitations to ensure memorable and organized celebrations.</p>
+          </SpotlightCard>
+        </SplideSlide>
+        <SplideSlide>
+          <SpotlightCard className="custom-spotlight-card h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
+            <h3 className="text-xl font-semibold">Unicorn-Ui</h3>
+            <p className="text-gray-200 text-lg">(skills: reactJs, bootstrap, metronic-template)</p>
+            <p className="text-gray-300 mt-2">Collection of premium UI design templates encompassing diverse topics, providing a paid facility for professionals seeking high-quality. (User panel & Admin Panel)</p>
+          </SpotlightCard>
+        </SplideSlide>
+      </Splide>
     </div>
 
     <footer className="py-7 text-gray-500 text-center">
