@@ -1,14 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'merriweatherRegular';
+    src: url('./assets/fonts/MerriweatherSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+body {
+    font-family: 'merriweatherRegular', sans-serif;
 }
 
 @layer utilities {
     .container {
         @apply max-w-[1500px] w-full mx-auto px-6;
     }
+
+    h3 {
+        @apply text-xl font-semibold;
+    }
+
+    h2 {
+        @apply text-2xl font-semibold;
+    }
+
 }

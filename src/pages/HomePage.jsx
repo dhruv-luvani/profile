@@ -9,27 +9,56 @@ import gitLabSvg from '../assets/svg/gitlab.svg'
 import firebaseSvg from '../assets/svg/Firebase.svg'
 import nextSvg from '../assets/svg/Next.svg'
 import nodeJsSvg from '../assets/svg/NodeJS.svg'
+import gitSvg from '../assets/svg/git.svg'
+import githubSvg from '../assets/svg/github.svg'
+import reduxToolkitPng from '../assets/images/redux-toolkit.png'
+import javascriptSvg from '../assets/svg/javascript.svg'
+import typescriptSvg from '../assets/svg/typescript.svg'
+import bootstrapSvg from '../assets/svg/bootstrap.svg'
+import tailwindCssPng from '../assets/images/tailwind-css.png'
+import htmlSvg from '../assets/svg/html.svg'
+import { ReactTyped } from "react-typed";
+import bgProfileImg from '../assets/images/profile_42.png'
+
 export default function HomePage() {
   return (<div className='min-h-screen bg-gray-800 text-white'>
     <Header />
 
-    <div className="h-[500px] flex flex-col justify-center bg-gradient-to-r from-blue-500 to-purple-800 text-white">
-      <div className="container">
-        <h1 className="text-4xl font-bold">Hello, I'm Dhruv Luvani</h1>
-        <p className="text-xl text-slate-300 mt-2">React.js | Next.js Developer</p>
+    <div className=" bg-gradient-to-r from-blue-500 to-purple-800 text-white">
+      <div
+       className="container h-[500px] flex flex-col justify-center bg-right-bottom bg-no-repeat"
+       style={{
+        backgroundImage: `url(${bgProfileImg})`,
+        backgroundSize:"auto 85%"
+        }}>
+        <h1 className="text-5xl font-bold">Hello, I'm Dhruv Luvani</h1>
+        <ReactTyped
+          strings={[
+            "React Js Developer",
+            "Next Js Developer",
+          ]}
+          typeSpeed={75}
+          backSpeed={30}
+          backDelay={1000}
+          attr="placeholder"
+          loop
+        >
+          <input className='text-2xl italic bg-transparent outline-none placeholder:text-white text-slate-300 mt-2 cursor-default' type="text" disabled />
+        </ReactTyped>
       </div>
     </div>
 
-    <div id='skillsSection' className="container bg-gray-800 p-6 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold border-b pb-2 mb-4">My Skills</h2>
+    <div id='skillsSection' className="container bg-gray-800 p-6">
+      <h2 className="border-b border-primary pb-2 mb-4">My Skills</h2>
       <Splide
         aria-label="My Favorite Images"
         options={{
-          type: 'loop',
+          type: 'slide',
           drag: 'free',
-          perPage: 5,
+          perPage: 6,
           pagination: false,
           arrows: false,
+          gap: "20px",
           autoScroll: {
             speed: 1,
             pauseOnHover: false,
@@ -39,72 +68,66 @@ export default function HomePage() {
         extensions={{ AutoScroll }}
       >
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={reactSvg} alt="Image 2" />
-          <div className='text-center'>React Js</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={reactSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>React Js</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={awsSvg} alt="Image 2" />
-          <div className='text-center'>AWS amplify</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={nextSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Next Js</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={firebaseSvg} alt="Image 2" />
-          <div className='text-center'>Firebase</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={awsSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>AWS amplify</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nextSvg} alt="Image 2" />
-          <div className='text-center'>Next Js</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={firebaseSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Firebase</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={gitLabSvg} alt="Image 2" />
-          <div className='text-center'>Gitlab</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={gitSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Git</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={githubSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>GitHub</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={gitLabSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Gitlab</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={reduxToolkitPng} alt="Image 2" />
+          <h3 className='text-center mt-2'>Redux Toolkit</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={javascriptSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Javascript</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={typescriptSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Typescript</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-[26px] bg-white' src={bootstrapSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Bootstrap CSS</h3>
         </SplideSlide>
         <SplideSlide>
-          <img className='h-[150px] mx-auto bg-white/25 rounded-2xl' src={nodeJsSvg} alt="Image 2" />
-          <div className='text-center'>Node Js (Learning)</div>
+          <img className='h-[150px] mx-auto rounded-xl' src={tailwindCssPng} alt="Image 2" />
+          <h3 className='text-center mt-2'>Tailwind CSS</h3>
+        </SplideSlide>
+        <SplideSlide>
+          <img className='h-[150px] mx-auto rounded-xl' src={htmlSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>HTML</h3>
+        </SplideSlide>
+        <SplideSlide>
+          <img className='h-[150px] mx-auto rounded-xl' src={nodeJsSvg} alt="Image 2" />
+          <h3 className='text-center mt-2'>Node Js</h3>
         </SplideSlide>
       </Splide>
-      {/* <ul className="flex flex-wrap gap-[10px] text-center justify-center">
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">ReactJs</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">Next.Js</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">Redux-Toolkit</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">Javascript</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">TypeScript</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">Bootstrap CSS</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">Tailwind CSS</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">HTML</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">GitLab</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">Github</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">AWS amplify</li>
-        <li className="bg-gray-700 p-3 rounded-lg w-[45%]">NodeJs (Learning)</li>
-      </ul> */}
     </div>
 
     <div id='experienceSection' className="container bg-gray-800 p-6 mt-10 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Work Experience</h2>
+      <h2 className="border-b border-primary pb-2 mb-4">Work Experience</h2>
       <div className="space-y-4">
         <div className="bg-gray-700 p-4 rounded-lg">
           <h3 className="text-xl font-semibold">ReactJs | NextJs Developer at Semicolon Solution</h3>
@@ -114,7 +137,7 @@ export default function HomePage() {
     </div>
 
     <div id='projectSection' className="container bg-gray-800 p-6 mt-10 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Projects</h2>
+      <h2 className="border-b border-primary pb-2 mb-4">Projects</h2>
       <div className="space-y-4">
         <div className="bg-gray-700 p-4 rounded-lg">
           <h3 className="text-xl font-semibold">Explain Life</h3>
@@ -159,13 +182,13 @@ export default function HomePage() {
     </div>
 
     <div id='contactSection' className="container bg-gray-800 p-6 mt-10 rounded-lg shadow-lg text-center">
-      <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Contact Me</h2>
-      <p>Email: <a href="mailto:johndoe@example.com" className="text-blue-400">johndoe@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" className="text-blue-400">linkedin.com/in/johndoe</a></p>
+      <h2 className="border-b border-primary pb-2 mb-4">Contact Me</h2>
+      <p>Email: <a href="mailto:dvluvani@gmail.com" target='_blank' className="text-blue-400">dvluvani@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/dhruv-luvani/" target='_blank' className="text-blue-400">linkedin.com/in/dhruv-luvani</a></p>
     </div>
 
-    <footer className="mt-10 text-gray-500">
-      <p>&copy; 2025 John Doe. All rights reserved.</p>
+    <footer className="py-7 text-gray-500 text-center">
+      <p>&copy; 2025 Dhruv Luvani. All rights reserved.</p>
     </footer>
   </div>)
 }
