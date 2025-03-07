@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.3a44818c.css",
-    "main.js": "/profile/static/js/main.f053d985.js",
+    "main.css": "/profile/static/css/main.66a00e63.css",
+    "main.js": "/profile/static/js/main.2f275512.js",
+    "static/media/mizoramProject.png": "/profile/static/media/mizoramProject.cd158c4afd66a00fb97e.png",
+    "static/media/unicornuiProject.png": "/profile/static/media/unicornuiProject.87a51c46e1af4af18dff.png",
+    "static/media/explainLifeProject.png": "/profile/static/media/explainLifeProject.075e82f74c4ba68a8cfd.png",
     "static/media/profile_42.png": "/profile/static/media/profile_42.751991461fba09835022.png",
     "static/media/MerriweatherSans-Regular.ttf": "/profile/static/media/MerriweatherSans-Regular.27b0374b65fbd3a177d4.ttf",
     "static/media/tailwind-css.png": "/profile/static/media/tailwind-css.e98c3ed774d725ee56d6.png",
@@ -18,11 +21,11 @@
     "static/media/html.svg": "/profile/static/media/html.5e573fdf0c587ece362a79ccfb253cbf.svg",
     "static/media/Firebase.svg": "/profile/static/media/Firebase.6a9dd980c9d40a095f5cd77fd587fe8e.svg",
     "index.html": "/profile/index.html",
-    "main.3a44818c.css.map": "/profile/static/css/main.3a44818c.css.map",
-    "main.f053d985.js.map": "/profile/static/js/main.f053d985.js.map"
+    "main.66a00e63.css.map": "/profile/static/css/main.66a00e63.css.map",
+    "main.2f275512.js.map": "/profile/static/js/main.2f275512.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a44818c.css",
-    "static/js/main.f053d985.js"
+    "static/css/main.66a00e63.css",
+    "static/js/main.2f275512.js"
   ]
 }
