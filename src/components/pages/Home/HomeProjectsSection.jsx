@@ -4,7 +4,7 @@ import SpotlightCard from '../../widgets/SpotlightCard';
 export default function HomeProjectsSection() {
     return (
         <div>
-            <div id='projectSection' className="container bg-gray-800 p-6 mt-10">
+            <div id='projectSection' className="container p-6 mt-10">
                 <h2 className="border-b border-gray-400 pb-2 mb-4">Projects</h2>
                 <Splide
                     aria-label="My Favorite Images"
@@ -20,11 +20,11 @@ export default function HomeProjectsSection() {
                 >
                     {projectData.map((v) => {
                         return (<SplideSlide>
-                            <SpotlightCard className="h-full" spotlightColor="rgba(0, 229, 255, 0.2)">
-                                <h3 className="text-xl font-semibold">{v?.title}</h3>
-                                <p className="text-gray-200 text-lg">(skills: {v.skills})</p>
-                                <p className="text-gray-300 mt-2">{v.description} {v.description}</p>
-                            </SpotlightCard>
+                                <SpotlightCard className="h-[100px]" spotlightColor="rgba(0, 229, 255, 0.2)">
+                                        <h3 className="text-xl font-semibold">{v?.title}</h3>
+                                        <p className="text-gray-200 text-lg">(skills: {v.skills})</p>
+                                        <p className="text-gray-300 mt-2">{v.description} {v.description}</p>
+                                    </SpotlightCard>
                         </SplideSlide>)
                     })}
                 </Splide>

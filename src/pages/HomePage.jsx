@@ -6,10 +6,10 @@ import HomeSkillsSection from '../components/pages/Home/HomeSkillsSection';
 export default function HomePage() {
   return (<>
     <div className='min-h-screen bg-gray-800 text-white'>
-        <HomeHeroSection />
-        <HomeSkillsSection />
-        <HomeProjectsSection />
-        <Footer />
+      <HomeHeroSection />
+      <HomeSkillsSection />
+      <HomeProjectsSection />
+      <Footer />
     </div>
   </>)
 }
