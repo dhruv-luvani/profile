@@ -10,7 +10,7 @@ export default function HomeSkillsSection() {
                 <Splide
                     aria-label="My Favorite Images"
                     options={{
-                        type: 'slide',
+                        type: 'loop',
                         drag: 'free',
                         perPage: 6,
                         pagination: false,

@@ -12,42 +12,53 @@ import bootstrapSvg from "../assets/svg/bootstrap.svg"
 import tailwindCssSvg from "../assets/images/tailwind-css.png"
 import htmlSvg from "../assets/svg/html.svg"
 import NodeJSSvg from "../assets/svg/NodeJS.svg"
+import explainLifeProject from "../assets/images/explainLifeProject.png"
+import mizoramProject from "../assets/images/mizoramProject.png"
+import unicornuiProject from "../assets/images/unicornuiProject.png"
+import noImage from "../assets/images/noImageAvailable.jpg"
 
 export const localStorageKey = "dhruvDemo_user_data"
 
 export const projectData = [
     {
         "title": "Explain Life",
+        "image": explainLifeProject,
         "skills": ["ReactJs", "Tailwind CSS", "Redux Toolkit"],
         "description": "Life insurance policy recommendation agent website with coverage calculation with NodeJS backend (Admin panel & User panel)."
     },
     {
         "title": "Fitness Administration Portal",
+        "image": noImage,
         "skills": ["ReactJs", "Bootstrap", "Metronic Template"],
         "description": "Provide a fitness plan that includes workout videos, personalized calorie tracking, and dietary recommendations."
     },
     {
         "title": "Skyline Technology Administration Portal",
+        "image": noImage,
         "skills": ["ReactJs", "Bootstrap", "Metronic Template"],
         "description": "Create an integrated administration portal for efficient client, engineer, and Sarine machine Management, facilitating seamless coordination of diamond repair services and timely resolution of upcoming complaints."
     },
     {
-        "title": "Read-it-out",
+        "title": "Mizoram Library",
+        "image": mizoramProject,
         "skills": ["ReactJs", "Tailwind CSS", "Redux Toolkit"],
         "description": "A government library website offering a wide range of books in various formats, ensuring accessibility and availability to users."
     },
     {
         "title": "3SquaresApp",
+        "image": noImage,
         "skills": ["ReactJs", "Bootstrap"],
         "description": "Food delivery website by connecting users with a diverse selection of professional restaurants and providing seamless delivery services. (with User Site, Admin Panel, Corporate Panel and Provider Panel)."
     },
     {
         "title": "Special Days Administration Portal",
+        "image": noImage,
         "skills": ["ReactJs", "Bootstrap", "Metronic Template"],
         "description": "Website dedicated to commemorating special occasions, offering advanced reminder functionalities and personalized party invitations to ensure memorable and organized celebrations."
     },
     {
         "title": "Unicorn-Ui",
+        "image": unicornuiProject,
         "skills": ["ReactJs", "Bootstrap", "Metronic Template"],
         "description": "Collection of premium UI design templates encompassing diverse topics, providing a paid facility for professionals seeking high-quality. (User panel & Admin Panel)."
     }
