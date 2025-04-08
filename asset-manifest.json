@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.66a00e63.css",
-    "main.js": "/profile/static/js/main.2f275512.js",
+    "main.css": "/profile/static/css/main.2ee56e99.css",
+    "main.js": "/profile/static/js/main.0b9047b0.js",
     "static/media/mizoramProject.png": "/profile/static/media/mizoramProject.cd158c4afd66a00fb97e.png",
     "static/media/unicornuiProject.png": "/profile/static/media/unicornuiProject.87a51c46e1af4af18dff.png",
     "static/media/explainLifeProject.png": "/profile/static/media/explainLifeProject.075e82f74c4ba68a8cfd.png",
@@ -21,11 +21,11 @@
     "static/media/html.svg": "/profile/static/media/html.5e573fdf0c587ece362a79ccfb253cbf.svg",
     "static/media/Firebase.svg": "/profile/static/media/Firebase.6a9dd980c9d40a095f5cd77fd587fe8e.svg",
     "index.html": "/profile/index.html",
-    "main.66a00e63.css.map": "/profile/static/css/main.66a00e63.css.map",
-    "main.2f275512.js.map": "/profile/static/js/main.2f275512.js.map"
+    "main.2ee56e99.css.map": "/profile/static/css/main.2ee56e99.css.map",
+    "main.0b9047b0.js.map": "/profile/static/js/main.0b9047b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.66a00e63.css",
-    "static/js/main.2f275512.js"
+    "static/css/main.2ee56e99.css",
+    "static/js/main.0b9047b0.js"
   ]
 }
