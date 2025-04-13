@@ -27,6 +27,12 @@ export const projectData = [
         "description": "Life insurance policy recommendation agent website with coverage calculation with NodeJS backend (Admin panel & User panel)."
     },
     {
+        "title": "Semicolon Portfolio",
+        "image": explainLifeProject,
+        "skills": ["NextJs", "Tailwind CSS", "Firebase"],
+        "description": "Company portfolio website with a focus on showcasing services and projects, built using Next.js and Tailwind CSS with Firebase Database."
+    },
+    {
         "title": "Fitness Administration Portal",
         "image": noImage,
         "skills": ["ReactJs", "Bootstrap", "Metronic Template"],
@@ -36,7 +42,7 @@ export const projectData = [
         "title": "Skyline Technology Administration Portal",
         "image": noImage,
         "skills": ["ReactJs", "Bootstrap", "Metronic Template"],
-        "description": "Create an integrated administration portal for efficient client, engineer, and Sarine machine Management, facilitating seamless coordination of diamond repair services and timely resolution of upcoming complaints."
+        "description": "Create an integrated administration portal for client, engineer, and sarine machine Management, facilitating machine repair services and timely resolution of upcoming complaints."
     },
     {
         "title": "Mizoram Library",

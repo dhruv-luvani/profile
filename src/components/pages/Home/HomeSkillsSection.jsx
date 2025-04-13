@@ -21,6 +21,23 @@ export default function HomeSkillsSection() {
                             pauseOnHover: false,
                             pauseOnFocus: false,
                         },
+                        breakpoints: {
+                            1200: {
+                                perPage: 6,
+                            },
+                            992: {
+                                perPage: 5,
+                            },
+                            768: {
+                                perPage: 4,
+                            },
+                            500: {
+                                perPage: 2,
+                            },
+                            0: {
+                                perPage: 2,
+                            },
+                        },
                     }}
                     extensions={{ AutoScroll }}
                 >
